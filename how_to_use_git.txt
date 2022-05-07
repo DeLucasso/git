@@ -35,5 +35,9 @@ git log
 git commit -m "Initial Commit"
 
 // Pushing commits to a remote repository
-git -
+git remote add origin https://github.com/DeLucasso/NAME_OF_GIT.git
+git branch -M main
+git push -u origin main
 
+// Premade templates for .gitignore files
+https://github.com/github/gitignore
