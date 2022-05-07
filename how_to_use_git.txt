@@ -1,0 +1,39 @@
+When we are in a local folder, here is what we can do:
+
+// To Initialize a git
+git init
+
+// To include all files (those listed in .gitignore are omited
+git add .
+
+// To ignore (omit) files from the git repository to be uploaded to GitHub
+// First create a hidden file gitignore
+touch .gitignore
+
+//Add files to the .gitignore file 
+open .gitignore
+
+// To remove all files from git stage
+git -rm --cashed -r .
+
+// To remove one file from git stage
+git -rm --cashed filename.txt
+
+// To get a status of git
+git status
+
+// To get a log of the git stage
+git log
+
+// Comment in .gitignore
+#This is a comment line in .gitignore
+
+// Use wildcards in .gitignore
+*.txt
+
+// Create a STAGE
+git commit -m "Initial Commit"
+
+// Pushing commits to a remote repository
+git -
+
