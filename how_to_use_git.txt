@@ -1,4 +1,7 @@
-When we are in a local folder, here is what we can do:
+// You can check out a full git handbook here: https://docs.github.com/en/get-started/using-git/about-git
+
+I summarized basics here.
+When we are in a local bash and in particular project directory, here is what we can do.
 
 //git phases are :
 WORKING DIRECTORY - STAGING AREA - LOCAL REPOSITORY - REMOTE REPOSITORY
