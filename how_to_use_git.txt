@@ -1,5 +1,8 @@
 When we are in a local folder, here is what we can do:
 
+//git phases are :
+WORKING DIRECTORY - STAGING AREA - LOCAL REPOSITORY - REMOTE REPOSITORY
+
 // To Initialize a git
 git init
 
