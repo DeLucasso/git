@@ -1,6 +1,5 @@
 // You can check out a full git handbook here: https://docs.github.com/en/get-started/using-git/about-git
 
-
 // Premade templates for .gitignore files
 https://github.com/github/gitignore
 
@@ -50,16 +49,42 @@ git remote add origin https://github.com/DeLucasso/NAME_OF_GIT.git
 git branch -M main
 git push -u origin main
 
+// Article to understand git branching
+// https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+
 // Making a new branch
 git branch -m new_branch_name
 
 // Check branch list
 git branch
 
-// Switch a branch
+// Switch a branch ( Check Out ), then you can see '*' at 
 git checkout branch_name
 
 // Renaming a local branch
 git -m old_name new_name
+
+// Deleting a local branch
+// First you have to checkout a branch that you want to delete (if its' marked as *)
+// Then you can delete a branch
+git -d branch_name_to_delete
+
+// Deleting a branch REMOTELY
+git push origin --delete branch_name
+
+// !! Everytime when you want to commit changes to the git, you have to do every time this:
+git add . //(to include all files to git)
+git commit -m "Your commit comment of the changes you've made"
+
+// Merging a branch to main, don't forget to add all files and commit changes first!
+First if you are happy with the changes in branch, you can merge the branch with main
+git checkout main
+git merge name_of_branch_that_you_want_to_merge // git merge branch1
+// The vim editor will open, so you can add comments to merge. Then to save write " :q! "
+
+// Push the git to the origin main (remote)
+git push origin main -u
+
+
 
 
