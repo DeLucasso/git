@@ -1,6 +1,11 @@
 // You can check out a full git handbook here: https://docs.github.com/en/get-started/using-git/about-git
 
+
+// Premade templates for .gitignore files
+https://github.com/github/gitignore
+
 I summarized basics here.
+
 When we are in a local bash and in particular project directory, here is what we can do.
 
 //git phases are :
@@ -45,5 +50,16 @@ git remote add origin https://github.com/DeLucasso/NAME_OF_GIT.git
 git branch -M main
 git push -u origin main
 
-// Premade templates for .gitignore files
-https://github.com/github/gitignore
+// Making a new branch
+git branch -m new_branch_name
+
+// Check branch list
+git branch
+
+// Switch a branch
+git checkout branch_name
+
+// Renaming a local branch
+git -m old_name new_name
+
+
