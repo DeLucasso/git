@@ -3,6 +3,8 @@
 // Premade templates for .gitignore files
 https://github.com/github/gitignore
 
+// Here you can learn the branching https://learngitbranching.js.org/
+
 I summarized basics here.
 
 When we are in a local bash and in particular project directory, here is what we can do.
