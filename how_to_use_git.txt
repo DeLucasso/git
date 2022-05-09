@@ -85,8 +85,8 @@ git merge name_of_branch_that_you_want_to_merge // git merge branch1
 // The vim editor will open, so you can add comments to merge. Then to save write " :q! "
 
 // Push the git to the origin main (remote)
-git push origin main -u
-
+// Dont forget to commit changes first :$ git commit -m "Your commit stage description"
+git push -u origin main
 
 
 
