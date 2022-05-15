@@ -9,14 +9,26 @@ I summarized basics here.
 
 When we are in a local bash and in particular project directory, here is what we can do.
 
-//git phases are :
+// git phases are :
 WORKING DIRECTORY - STAGING AREA - LOCAL REPOSITORY - REMOTE REPOSITORY
 
-// To Initialize a git
+// ---------------------------------------------
+// 1 - To Initialize a git
 git init
 
-// To include all files (those listed in .gitignore are omited
+// 2 - To include all files (those listed in .gitignore are omited
 git add .
+
+// 3 - Create a LOCAL STAGE
+git commit -m "Initial Commit"
+
+// 4 - Pushing commits to a remote repository
+// Push the git to the origin main (remote)
+// Dont forget to commit changes first :$ git commit -m "Your commit stage description"
+git remote add origin https://github.com/DeLucasso/NAME_OF_GIT.git
+git branch -m main
+git push -u origin main
+// ---------------------------------------------
 
 // To ignore (omit) files from the git repository to be uploaded to GitHub
 // First create a hidden file gitignore
@@ -42,14 +54,6 @@ git log
 
 // Use wildcards in .gitignore
 *.txt
-
-// Create a STAGE
-git commit -m "Initial Commit"
-
-// Pushing commits to a remote repository
-git remote add origin https://github.com/DeLucasso/NAME_OF_GIT.git
-git branch -M main
-git push -u origin main
 
 // Article to understand git branching
 // https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
@@ -83,10 +87,3 @@ First if you are happy with the changes in branch, you can merge the branch with
 git checkout main
 git merge name_of_branch_that_you_want_to_merge // git merge branch1
 // The vim editor will open, so you can add comments to merge. Then to save write " :q! "
-
-// Push the git to the origin main (remote)
-// Dont forget to commit changes first :$ git commit -m "Your commit stage description"
-git push -u origin main
-
-
-
