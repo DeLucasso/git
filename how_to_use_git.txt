@@ -34,6 +34,11 @@ git push -u origin main
 // Use git log to find a has of commit that you'd like to reset to.
 git reset --hard [hash]
 
+// If you want to preserve your work, you can use the stash command:
+git stash
+git reset --hard [hash]
+git stash pop
+
 // To ignore (omit) files from the git repository to be uploaded to GitHub
 // First create a hidden file gitignore
 touch .gitignore
