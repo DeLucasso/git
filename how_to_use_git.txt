@@ -30,6 +30,10 @@ git branch -m main
 git push -u origin main
 // ---------------------------------------------
 
+// To reset to some specifid commit
+// Use git log to find a has of commit that you'd like to reset to.
+git reset --hard [hash]
+
 // To ignore (omit) files from the git repository to be uploaded to GitHub
 // First create a hidden file gitignore
 touch .gitignore
